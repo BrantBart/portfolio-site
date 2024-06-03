@@ -1,12 +1,9 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+I am trying to improve my React.JS understanding and decided to build a simple app portfolio using it. It will have three tabs/pages where I can display data and pages using React.JS tactics and skills. The home page, portfolio page and database pages are going to be useful for showcasing my learning and development.
 
-{Provide a description the web app that you wrote. Describe how to start a test server on your computer and what website to open up to see the first page of the app.}
+Starting the test server should be installing npm and using the files and run "npm start". This will run the test server on your local machine.
 
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.}
 
 [Software Demo Video](http://youtube.link.goes.here)
 
