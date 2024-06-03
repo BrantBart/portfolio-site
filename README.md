@@ -9,23 +9,19 @@ Starting the test server should be installing npm and using the files and run "n
 
 # Web Pages
 
-{Describe each of the web pages you created and how the web app transitions between each of them.  Also describe what is dynamically created on each page.}
+I made the Home page, the portfolio page, and the blogs page. Home is a welcome page, the blog page is for writing and viewing basic blog posts and the portfolio page is for viewing projects I worked on in the past.
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
-
+HTML, SCSS, React.JS, JSON, PHP (for the live version of the database), and I attempted to use some bootstrap styles for some css.
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* https://www.freecodecamp.org/news/how-to-fetch-api-data-in-react/
+* https://www.youtube.com/watch?v=NzpbupWoIV4
 
 # Future Work
 
 {Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+Make the database form more user friendly. (Show and hide it)
+update the portfolio to have more content.
