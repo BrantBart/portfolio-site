@@ -16,12 +16,10 @@ I made the Home page, the portfolio page, and the blogs page. Home is a welcome 
 HTML, SCSS, React.JS, JSON, PHP (for the live version of the database), and I attempted to use some bootstrap styles for some css.
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * https://www.freecodecamp.org/news/how-to-fetch-api-data-in-react/
 * https://www.youtube.com/watch?v=NzpbupWoIV4
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
 Make the database form more user friendly. (Show and hide it)
 update the portfolio to have more content.
