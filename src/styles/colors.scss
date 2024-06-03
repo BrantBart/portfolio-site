@@ -1,0 +1,89 @@
+//colors
+$white: white;
+
+$dark-blue: #0c7489;
+$light-blue: #00abe7;
+$light-gray: #f5f5f5;
+$dark-gray: #001524;
+
+$alert-red: #e54b4b;
+$tangerine: #ff934f;
+
+// not yet used
+$fade-d-blue: $dark-blue;
+$fade-l-blue: $tangerine;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+$color-white: #ffffff;
+$color-gray: #ccd6d9;
+
+//site colors
+$color-primary: #0c7489;
+$color-secondary: #053b50;
+$color-tertiary: #010e17;
+
+// Accent Tones
+$color-accent-orange: #ffa400;
+$color-accent-red: #820933;
+$color-accent-green: #00b4d8;
+
+.row.color-test-one .col {
+    height: 100px;
+    text-align: center;
+    padding-top: 35px;
+    &:nth-child(1) {
+        background-color: $color-white;
+        color: $color-tertiary;
+    }
+    &:nth-child(2) {
+        background-color: $color-gray;
+        color: $color-tertiary;
+    }
+    &:nth-child(3) {
+        background-color: $color-tertiary;
+        color: $color-gray;
+    }
+}
+
+.row.color-test-two .col {
+    height: 100px;
+    text-align: center;
+    padding-top: 35px;
+    &:nth-child(1) {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+    &:nth-child(2) {
+        background-color: $color-secondary;
+        color: $color-white;
+    }
+    &:nth-child(3) {
+        background-color: $color-tertiary;
+        color: $color-gray;
+    }
+}
+
+.logofull {
+    g {
+        // fill: $color-secondary;
+        // & g:first-child {
+        //     fill: $color-primary;
+        // }
+        // & g:nth-child(5) {
+        //     fill: $color-primary;
+        // }
+        // & g:nth-child(6) {
+        //     fill: $color-primary;
+        // }
+    }
+    &:hover {
+        g:not(g g) {
+            fill: $color-primary;
+        }
+        .icon {
+            animation: spin 1s;
+            transform-box: fill-box;
+            transform-origin: center;
+        }
+    }
+}

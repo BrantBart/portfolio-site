@@ -1,0 +1,59 @@
+@import "breakpoints.scss";
+@import "colors.scss";
+
+.row {
+    // border: solid 1px red;
+}
+
+.col {
+    display: flex;
+    &-text {
+        margin: 15px 50px;
+    }
+    &-image {
+        margin: 0;
+    }
+}
+
+.full {
+    display: flex;
+    flex-direction: row;
+    align-items: center; //vertical
+    justify-content: center; //horizontal
+    overflow: hidden;
+    background-color: $color-white;
+}
+
+.sixty-six {
+    flex: 66%;
+}
+
+.fifty {
+    flex: 50%;
+}
+
+.thirty-three {
+    display: flex;
+    flex: 33%;
+}
+
+.justify-content {
+    &-left {
+        overflow: hidden;
+        justify-content: flex-start;
+    }
+    &-center {
+        overflow: hidden;
+        justify-content: center;
+    }
+    &-right {
+        overflow: hidden;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: map.get($breakpoints, "tablet")) {
+    .full {
+        flex-direction: column;
+    }
+}
