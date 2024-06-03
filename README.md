@@ -5,7 +5,7 @@ I am trying to improve my React.JS understanding and decided to build a simple a
 Starting the test server should be installing npm and using the files and run "npm start". This will run the test server on your local machine.
 
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video] https://www.youtube.com/watch?v=lSQ8VXNfXWw
 
 # Web Pages
 
