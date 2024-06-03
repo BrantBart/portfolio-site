@@ -1,0 +1,94 @@
+@import "../../styles/colors.scss";
+
+.signup-form {
+    background-color: $dark-blue;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    input {
+        background-color: $color-gray;
+        color: $dark-gray;
+    }
+    .options,
+    .options p {
+        display: block;
+        color: $light-gray;
+        margin-top: 20px;
+        a {
+            color: $light-gray;
+            text-decoration: none;
+            &:hover {
+                color: $color-white;
+                text-shadow: 1px 1px 2px $light-blue;
+            }
+            &:active {
+                color: $white;
+                text-shadow: 1px 1px 2px $dark-blue;
+            }
+        }
+    }
+    .icon {
+        display: block;
+        border-radius: 25px;
+        width: 50px;
+        border: solid 5px $dark-gray;
+        background-color: $dark-gray;
+        margin: auto;
+        margin-bottom: 25px;
+        g {
+            fill: $light-blue;
+            & g:first-child {
+                fill: $tangerine;
+            }
+            & g:nth-child(5) {
+                fill: $tangerine;
+            }
+            & g:nth-child(6) {
+                fill: $tangerine;
+            }
+        }
+    }
+
+    .sm-icon .ir {
+        display: block;
+        background-color: $tangerine;
+        border-radius: 100px;
+        position: relative;
+        height: 40px;
+        width: 40px;
+        margin: auto;
+        margin-top: 25px;
+        svg {
+            fill: $dark-gray;
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:active svg {
+            fill: $tangerine;
+        }
+    }
+
+    .logofull {
+        height: 30px;
+        margin: auto;
+        width: 100%;
+        margin-top: 25px;
+        g {
+            fill: $dark-gray;
+            & g:first-child {
+                fill: $tangerine;
+            }
+            & g:nth-child(5) {
+                fill: $tangerine;
+            }
+            & g:nth-child(6) {
+                fill: $tangerine;
+            }
+        }
+    }
+}

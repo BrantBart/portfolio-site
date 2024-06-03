@@ -1,0 +1,140 @@
+@use "sass:map";
+@import "../../styles/colors.scss";
+@import "../../styles/breakpoints.scss";
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(120deg);
+    // transform: rotate(1020deg);
+  }
+}
+
+//brand
+
+.fixed-top {
+  background-color: $color-secondary;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 58px;
+  .navbar-brand {
+    padding: 0;
+    margin: 0;
+    .logofull {
+      height: 58px;
+      g {
+        fill: $color-gray;
+      }
+      &:hover {
+        g {
+          fill: $color-primary;
+        }
+        .icon {
+          animation: spin 1s;
+          transform-box: fill-box;
+          transform-origin: center;
+        }
+      }
+      &:active g {
+        fill: $color-primary;
+      }
+    }
+  }
+  .topnav {
+    height: 58px;
+  }
+  .navbar-brand {
+    padding: 0 10px;
+    float: left;
+    height: 58px;
+  }
+  .navbar-collapse {
+    width: 100%;
+    height: 58px;
+    input {
+      display: none;
+    }
+    label {
+      display: none;
+    }
+    .nav-items-top {
+      display: block;
+      float: right;
+      height: 58px;
+      a,
+      a:visited {
+        float: left;
+        padding: 20px;
+        margin-right: auto;
+        color: $color-gray;
+        text-decoration: none;
+        text-align: center;
+
+        &.active,
+        &:hover {
+          color: $color-white;
+          background-color: $color-primary;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: map.get($breakpoints, "tablet")) {
+  .fixed-top {
+    .navbar-brand {
+    }
+    .navbar-collapse {
+      input:checked ~ .nav-items-top {
+        display: block;
+      }
+      input:checked ~ label {
+        color: $color-primary;
+        border-color: $color-primary;
+      }
+      label {
+        background-color: $color-secondary;
+        color: $color-gray;
+        border: solid 2px $color-gray;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        float: right;
+        display: block;
+        position: absolute;
+        top: 7px;
+        right: 20px;
+        font-size: 20px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        &:hover {
+          color: $color-primary;
+          border-color: $color-primary;
+        }
+        &:active {
+          color: $color-primary;
+          border-color: $color-primary;
+        }
+      }
+      .nav-items-top.nav {
+        display: none;
+        position: absolute;
+        top: 58px;
+        width: 100%;
+        background-color: $color-secondary;
+        float: none;
+        height: auto;
+        a,
+        .navbar-collapse a:visited {
+          width: 100%;
+          padding: 20px 0;
+        }
+      }
+    }
+  }
+}
